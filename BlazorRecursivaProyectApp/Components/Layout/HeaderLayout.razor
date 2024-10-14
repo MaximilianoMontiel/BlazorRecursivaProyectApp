@@ -1,0 +1,19 @@
+﻿<div class="header">
+    <button class="btn-back" @onclick="GoBack">
+        <i class="fas fa-arrow-left"></i> <!-- Aquí puedes usar una imagen o icono para la flecha -->
+    </button>
+    <h2 class="header-title">@Title</h2>
+</div>
+
+@code {
+    [Parameter] public string Title { get; set; } // Parámetro para pasar el título dinámico
+    [Parameter] public EventCallback OnBackClick { get; set; } // Parámetro para manejar el evento del botón de atrás
+
+    private async Task GoBack()
+    {
+        if (OnBackClick.HasDelegate)
+        {
+            await OnBackClick.InvokeAsync(null);
+        }
+    }
+}

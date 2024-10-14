@@ -1,0 +1,115 @@
+﻿@page "/statistics"
+@using BlazorRecursivaProyectApp.Models
+@inject AppDbContext DbContext
+@using Microsoft.EntityFrameworkCore
+
+
+<HeaderLayout Title="Estadísticas de Signos" OnBackClick="GoBack" />
+
+<div class="statistics-container">
+    @if (mostSearchedSigns.Count() > 1)
+    {
+        <h3>Signos Más Buscado</h3>
+    }
+    else
+    {
+        <h3>Signo Más Buscado</h3>
+    }
+
+    <div class="most-searched-sign">
+        @if (mostSearchedSigns != null && mostSearchedSigns.Any())
+        {
+            @foreach (var sign in mostSearchedSigns)
+            {
+                <img src=@($"Images/boton_{sign}.png") alt="Signo @sign" />
+                
+            }
+        }
+        else
+        {
+            <p>No hay consultas aún.</p>
+        }
+    </div>
+
+    <h3>Historial de Consultas</h3>
+    <div class="history-container">
+        @if (consultationHistory != null && consultationHistory.Count > 0)
+        {
+
+            <table class="history-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Signo</th>
+                        <th>Fecha de Consulta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var consulta in consultationHistory)
+                    {
+                        <tr>
+                            <td>@consulta.Nombre</td>
+                            <td>@consulta.Signo</td>
+                            <td>@consulta.FechaConsulta</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>No hay consultas registradas.</p>
+        }
+    </div>
+</div>
+
+@code {
+    private List<HistorialConsultas> consultationHistory;
+    private List<string> mostSearchedSigns;
+    private string mostSearchedSignImage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Obtener el historial de consultas desde la base de datos
+        consultationHistory = await DbContext.HistorialConsultas.ToListAsync();
+
+        // Si hay consultas, calcular los signos más consultados
+        if (consultationHistory != null && consultationHistory.Count > 0)
+        {
+            mostSearchedSigns = CalculateMostSearchedSigns();
+        }
+    }
+
+    private List<string> CalculateMostSearchedSigns()
+    {
+        // Agrupar los signos y contar cuántas veces aparece cada uno
+        var groupedSigns = consultationHistory
+            .GroupBy(c => c.Signo)
+            .Select(g => new { Sign = g.Key, Count = g.Count() })
+            .ToList();
+
+        // Obtener el número máximo de consultas
+        int maxCount = groupedSigns.Max(g => g.Count);
+
+        // Seleccionar todos los signos que tengan el máximo número de consultas
+        return groupedSigns
+            .Where(g => g.Count == maxCount)
+            .Select(g => g.Sign)
+            .ToList();
+    }
+
+    private void GoBack()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+
+    [Inject]
+    NavigationManager NavigationManager { get; set; }
+
+    public class ConsultationHistory
+    {
+        public string Name { get; set; }
+        public string Sign { get; set; }
+        public DateTime Date { get; set; }
+    }
+}

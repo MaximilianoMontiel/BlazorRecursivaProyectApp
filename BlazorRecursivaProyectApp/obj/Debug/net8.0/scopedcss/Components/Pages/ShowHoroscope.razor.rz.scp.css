@@ -1,0 +1,40 @@
+.horoscope-container[b-jt0m40ph7x] {
+    text-align: center;
+    padding: 20px;
+}
+
+/*.sign-icon {
+    width: 100px;
+    height: 100px;
+}*/
+
+.sign-icon[b-jt0m40ph7x] {
+    max-width: 100%; /* La imagen no será más grande que el ancho del contenedor */
+    height: auto; /* Mantiene la proporción correcta de la imagen */
+    display: inline-block; /* Esto asegura que la imagen sea un bloque separado */
+    margin: auto; /* Centra la imagen horizontalmente */
+}
+
+
+.greeting[b-jt0m40ph7x] {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.horoscope-text[b-jt0m40ph7x] {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.btn-continue[b-jt0m40ph7x] {
+    background-color: #FF7F00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .btn-continue:hover[b-jt0m40ph7x] {
+        background-color: #E56C00;
+    }

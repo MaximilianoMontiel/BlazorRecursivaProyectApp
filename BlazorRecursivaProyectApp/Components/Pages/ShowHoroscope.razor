@@ -1,0 +1,52 @@
+﻿@page "/show-horoscope"
+@inject HoroscopeService HoroscopeService
+@inject NavigationManager NavigationManager
+@using BlazorRecursivaProyectApp.Services
+
+<HeaderLayout Title="Tu Horóscopo" OnBackClick="GoBack" />
+
+<div class="horoscope-container">
+    <img src=@($"Images/boton_{HoroscopeService.HoroscopeData.sign}.png") alt="@HoroscopeService.HoroscopeData.sign" class="sign-icon" />
+    <h2 class="greeting">Hola @userName!</h2>
+
+    <p class="horoscope-text">
+        Tu horóscopo para hoy dice que <br />
+        @HoroscopeService.HoroscopeData.horoscope
+    </p>
+
+     <p>Faltan @daysUntilBirthday días para tu cumpleaños.</p>
+
+    <button class="btn-continue" @onclick="GoToHome">CONTINUAR</button>
+</div>
+
+@code {
+    private int daysUntilBirthday;
+    private string userName;
+
+    protected override void OnInitialized()
+    {
+        // Extraer el nombre del servicio si está almacenado
+        if (HoroscopeService.HoroscopeData != null)
+        {
+            userName = HoroscopeService.HoroscopeData.name;
+        }
+
+        // Calcula los días hasta el próximo cumpleaños basado en la fecha de nacimiento
+        if (DateTime.TryParse(HoroscopeService.HoroscopeData.date, out DateTime birthDate))
+        {
+            daysUntilBirthday = Util.calculateDaysUntilNextBirthday(birthDate);
+        }
+    }
+
+
+    private void GoToHome()
+    {
+        // Navegar de vuelta a la página de inicio
+        NavigationManager.NavigateTo("/");
+    }
+
+     private void GoBack()
+    {
+        NavigationManager.NavigateTo("/input-data");
+    }
+}

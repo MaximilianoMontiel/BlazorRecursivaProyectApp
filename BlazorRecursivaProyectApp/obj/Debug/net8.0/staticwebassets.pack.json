@@ -1,0 +1,109 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorRecursivaProyectApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BlazorRecursivaProyectApp.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\wwwroot\\Images\\boton_Aquarius.png",
+      "PackagePath": "staticwebassets\\Images\\boton_Aquarius.png"
+    },
+    {
+      "Id": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\wwwroot\\Images\\boton_Aries.png",
+      "PackagePath": "staticwebassets\\Images\\boton_Aries.png"
+    },
+    {
+      "Id": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\wwwroot\\Images\\boton_Cancer.png",
+      "PackagePath": "staticwebassets\\Images\\boton_Cancer.png"
+    },
+    {
+      "Id": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\wwwroot\\Images\\boton_Capricorn.png",
+      "PackagePath": "staticwebassets\\Images\\boton_Capricorn.png"
+    },
+    {
+      "Id": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\wwwroot\\Images\\boton_Gemini.png",
+      "PackagePath": "staticwebassets\\Images\\boton_Gemini.png"
+    },
+    {
+      "Id": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\wwwroot\\Images\\boton_Leo.png",
+      "PackagePath": "staticwebassets\\Images\\boton_Leo.png"
+    },
+    {
+      "Id": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\wwwroot\\Images\\boton_Libra.png",
+      "PackagePath": "staticwebassets\\Images\\boton_Libra.png"
+    },
+    {
+      "Id": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\wwwroot\\Images\\boton_Pisces.png",
+      "PackagePath": "staticwebassets\\Images\\boton_Pisces.png"
+    },
+    {
+      "Id": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\wwwroot\\Images\\boton_Sagittarius.png",
+      "PackagePath": "staticwebassets\\Images\\boton_Sagittarius.png"
+    },
+    {
+      "Id": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\wwwroot\\Images\\boton_Scorpio.png",
+      "PackagePath": "staticwebassets\\Images\\boton_Scorpio.png"
+    },
+    {
+      "Id": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\wwwroot\\Images\\boton_Taurus.png",
+      "PackagePath": "staticwebassets\\Images\\boton_Taurus.png"
+    },
+    {
+      "Id": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\wwwroot\\Images\\boton_Virgo.png",
+      "PackagePath": "staticwebassets\\Images\\boton_Virgo.png"
+    },
+    {
+      "Id": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\wwwroot\\Images\\dama.png",
+      "PackagePath": "staticwebassets\\Images\\dama.png"
+    },
+    {
+      "Id": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\wwwroot\\Images\\gen-1.png",
+      "PackagePath": "staticwebassets\\Images\\gen-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\wwwroot\\Images\\gen-2.png",
+      "PackagePath": "staticwebassets\\Images\\gen-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\wwwroot\\Images\\gen-3.png",
+      "PackagePath": "staticwebassets\\Images\\gen-3.png"
+    },
+    {
+      "Id": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\wwwroot\\Images\\screen-01.png",
+      "PackagePath": "staticwebassets\\Images\\screen-01.png"
+    },
+    {
+      "Id": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\wwwroot\\Images\\screen-02.png",
+      "PackagePath": "staticwebassets\\Images\\screen-02.png"
+    },
+    {
+      "Id": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\wwwroot\\Images\\screen-03.png",
+      "PackagePath": "staticwebassets\\Images\\screen-03.png"
+    },
+    {
+      "Id": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\wwwroot\\Images\\screen-04.png",
+      "PackagePath": "staticwebassets\\Images\\screen-04.png"
+    },
+    {
+      "Id": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazorRecursivaProyectApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BlazorRecursivaProyectApp.props",
+      "PackagePath": "build\\BlazorRecursivaProyectApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BlazorRecursivaProyectApp.props",
+      "PackagePath": "buildMultiTargeting\\BlazorRecursivaProyectApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BlazorRecursivaProyectApp.props",
+      "PackagePath": "buildTransitive\\BlazorRecursivaProyectApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

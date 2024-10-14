@@ -1,0 +1,61 @@
+﻿.statistics-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.most-searched-sign {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*.sign-image {
+    width: 100px;
+    height: 100px;
+}*/
+
+.history-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.history-entry {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.statistics-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.most-searched-sign {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sign-image {
+    width: 100px;
+    height: 100px;
+}
+
+.history-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.history-entry {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.history-table th, .history-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center; /* Alinea el contenido de las celdas al centro */
+}

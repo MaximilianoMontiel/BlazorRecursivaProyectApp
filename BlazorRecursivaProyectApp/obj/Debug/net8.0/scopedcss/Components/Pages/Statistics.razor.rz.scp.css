@@ -1,0 +1,61 @@
+.statistics-container[b-lvbyo47vwb] {
+    padding: 20px;
+    text-align: center;
+}
+
+.most-searched-sign[b-lvbyo47vwb] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*.sign-image {
+    width: 100px;
+    height: 100px;
+}*/
+
+.history-container[b-lvbyo47vwb] {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.history-entry[b-lvbyo47vwb] {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.statistics-container[b-lvbyo47vwb] {
+    padding: 20px;
+    text-align: center;
+}
+
+.most-searched-sign[b-lvbyo47vwb] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sign-image[b-lvbyo47vwb] {
+    width: 100px;
+    height: 100px;
+}
+
+.history-container[b-lvbyo47vwb] {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.history-entry[b-lvbyo47vwb] {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.history-table th[b-lvbyo47vwb], .history-table td[b-lvbyo47vwb] {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center; /* Alinea el contenido de las celdas al centro */
+}

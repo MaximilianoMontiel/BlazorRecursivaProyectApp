@@ -1,0 +1,159 @@
+﻿.input-container {
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Permite que el contenido se alinee en columna */
+    justify-content: flex-start; /* Asegura que el contenido esté centrado verticalmente */
+    min-height: 100vh; /* Hace que el contenedor ocupe al menos el 100% del alto de la ventana */
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #0e50a1;
+    margin: 0 5px;
+}
+
+.filled {
+    background-color: #0e50a1;
+}
+
+.form-title {
+    color: #6a88b7;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+    .form-group label {
+        display: block;
+        font-size: 18px;
+        color: #6a88b7;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+.buttons-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 20px; /* Añade un espacio entre los botones */
+    flex-wrap: wrap; /* Permite que los botones se reorganicen si el espacio es pequeño */
+}
+
+.btn-back, .btn-continue {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-back {
+    background-color: #0e50a1;
+    color: white;
+}
+
+    .btn-back:hover {
+        background-color: #084289;
+    }
+
+.btn-continue {
+    background-color: #fe6d1a;
+    color: white;
+}
+
+    .btn-continue[disabled] {
+        background-color: #cccccc; /* Color gris cuando está deshabilitado */
+        cursor: not-allowed;
+        opacity: 0.5; /* Reduce la opacidad para mayor claridad */
+    }
+
+    .btn-continue:hover {
+        background-color: #d95f18;
+    }
+
+.loader {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #0e50a1;
+}
+
+/* Asegúrate de aplicar este estilo al input de fecha */
+input[type="date"] {
+    position: relative;
+    left: auto; /* Reemplaza cualquier valor de left si se aplica */
+    right: 0; /* Hace que el calendario aparezca alineado a la derecha */
+    z-index: 10; /* Asegura que esté por encima de otros elementos */
+    width: 100%; /* Ajusta el ancho del input de fecha */
+}
+
+.date-input {
+    position: relative;
+    right: 100; /* Alinea el input hacia la derecha */
+    z-index: 10;
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo gris semitransparente */
+    display: flex;
+    flex-direction: column; /* Alinea el loader y el texto verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    z-index: 1000; /* Asegura que esté por encima de todo */
+}
+
+.loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #0e50a1; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader-text {
+    margin-top: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+

@@ -1,0 +1,172 @@
+﻿@page "/input-data"
+@using System.Text.Json
+@inject HoroscopeService HoroscopeService
+@inject AppDbContext DbContext
+@using BlazorRecursivaProyectApp.Models
+@using BlazorRecursivaProyectApp.Services
+
+<HeaderLayout Title="Tus Datos" OnBackClick="GoBack" />
+
+
+<div class="input-container">
+    <div class="progress-bar">
+        <div class="circle filled"></div>
+        <div class="circle filled"></div>
+        <div class="circle"></div>
+    </div>
+
+    <h3 class="form-title">INGRESA TUS DATOS</h3>
+
+    <!-- Formulario -->
+    <div class="form-group">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" @bind="userName" @oninput="(e) => { userName = e.Value.ToString(); ValidateForm(); }" placeholder="Nombre" />
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" value="@email" @oninput="(e) => { email = e.Value.ToString(); ValidateForm(); }" placeholder="Email" />
+        @if (!isEmailValid)
+        {
+            <p style="color: red; font-size: small;">Formato de email inválido</p>
+        }
+    </div>
+
+     <div class="form-group">
+        <label for="birthdate">Fecha de Nacimiento:</label>
+        <input type="date" id="birthdate" @bind="birthDate" @oninput="ValidateForm" class="date-input" />
+    </div>
+
+    <!-- Botones Continuar y Volver -->
+    <div class="buttons-container">
+        <button class="btn-back" @onclick="GoBack">VOLVER</button>
+        <button class="btn-continue" @onclick="SubmitData" disabled="@(isFormValid == false)">CONTINUAR</button>
+    </div>
+
+    <!-- Loader. Se muestra al consumirse la API-->
+    @if (isSubmitting)
+    {
+        <div class="loader-container">
+            <div>
+                <div class="loader"></div>
+                <div class="loader-text">Cargando...</div>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    private string userName;
+    private string email;
+    private bool isSubmitting = false;
+    private bool isEmailValid = true;
+    private DateTime birthDate = new DateTime(1950, 1, 1);
+    private bool isDateValid = true;
+    private bool isFormValid = false;
+
+    private void ValidateForm()
+    {
+        isEmailValid = Util.validateEmail(email);
+
+        // Verificar si todos los campos son válidos
+        isFormValid = !string.IsNullOrWhiteSpace(userName) && isEmailValid && birthDate != default;
+
+    }
+
+    private void UpdateBirthDate(ChangeEventArgs e)
+    {
+        if (DateTime.TryParse(e.Value?.ToString(), out var parsedDate))
+        {
+            birthDate = parsedDate;
+        }
+    }
+
+    [Inject]
+    NavigationManager NavigationManager { get; set; }
+
+    private void GoBack()
+    {
+        // Navega de vuelta a Genre
+        NavigationManager.NavigateTo("/genre");
+    }
+
+    private async Task SubmitData()
+    {
+
+        if (!isFormValid) return;
+
+        // Mostrar el loader
+        isSubmitting = true;
+
+        // Calcula el signo zodiacal basado en la fecha de nacimiento
+        var zodiacSign = Util.calculateZodiacSign(birthDate);
+
+        // Preparar el cuerpo de la solicitud para la API
+        var requestBody = new
+        {
+            date = birthDate.ToString("yyyy-MM-dd"),
+            lang = "es",
+            sign = zodiacSign
+        };
+
+        try
+        {
+            using (var httpClient = new HttpClient())
+            {
+                // Serializar el objeto a JSON
+                var json = JsonSerializer.Serialize(requestBody);
+
+                // Crear el StringContent con el JSON serializado
+                var jsonContent = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
+
+                var response = await httpClient.PostAsync("https://newastro.vercel.app", jsonContent);
+
+                // Lanza una excepción si la respuesta no es exitosa
+                response.EnsureSuccessStatusCode(); 
+
+                var responseBody = await response.Content.ReadAsStringAsync();
+
+                var options = new JsonSerializerOptions
+                    {
+                        // Ignora mayúsculas y minúsculas en los nombres de las propiedades
+                        PropertyNameCaseInsensitive = true 
+                    };
+
+                // Deserializar el cuerpo de la respuesta
+                var horoscopeResponse = JsonSerializer.Deserialize<HoroscopeService.HoroscopeResponse>(responseBody, options);
+
+                // Almacenar los datos en el servicio
+                HoroscopeService.HoroscopeData = horoscopeResponse;
+                HoroscopeService.HoroscopeData.name = this.userName;
+                HoroscopeService.HoroscopeData.email = this.email;
+
+
+            }
+
+            // Guardo la consulta en la DB
+            var newConsulta = new HistorialConsultas
+            {
+                Nombre = HoroscopeService.HoroscopeData.name,
+                Signo = HoroscopeService.HoroscopeData.sign,
+                FechaConsulta = DateTime.Now.ToString("yyyy-MM-dd") 
+            };
+
+            DbContext.HistorialConsultas.Add(newConsulta);
+            await DbContext.SaveChangesAsync();
+
+            // Navego a ShowHoroscope
+            NavigationManager.NavigateTo("/show-horoscope");
+        }
+        catch (Exception ex)
+        {
+            // Muestra error en consola si obtuve algun error
+            Console.WriteLine("Error al consumir la API: " + ex.Message);
+        }
+        finally
+        {
+            // Ocultar el loader
+            isSubmitting = false;
+        }
+    }
+
+}

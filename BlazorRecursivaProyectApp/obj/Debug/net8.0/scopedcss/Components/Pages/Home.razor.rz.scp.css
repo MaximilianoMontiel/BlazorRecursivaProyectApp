@@ -1,0 +1,51 @@
+.container[b-xnla0pmndi] {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50 px;
+}
+
+.landing-image[b-xnla0pmndi] {
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.btn-ingresar[b-xnla0pmndi] {
+    background-color: #fe6d1a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .btn-ingresar:hover[b-xnla0pmndi] {
+        background-color: #d95f18;
+    }
+
+h1[b-xnla0pmndi] {
+    text-align: center;
+}
+
+button[b-xnla0pmndi] {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-estadisticas[b-xnla0pmndi] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-consultar[b-xnla0pmndi] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

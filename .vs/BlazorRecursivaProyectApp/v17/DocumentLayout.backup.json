@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{873EBB3B-49AE-43CD-B842-F4F4585E2C3C}|BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp.csproj|c:\\users\\mac\\source\\repos\\blazorrecursivaproyectapp\\blazorrecursivaproyectapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{873EBB3B-49AE-43CD-B842-F4F4585E2C3C}|BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp.csproj|solutionrelative:blazorrecursivaproyectapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{873EBB3B-49AE-43CD-B842-F4F4585E2C3C}|BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp.csproj|c:\\users\\mac\\source\\repos\\blazorrecursivaproyectapp\\blazorrecursivaproyectapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{873EBB3B-49AE-43CD-B842-F4F4585E2C3C}|BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp.csproj|solutionrelative:blazorrecursivaproyectapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{873EBB3B-49AE-43CD-B842-F4F4585E2C3C}|BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp.csproj|c:\\users\\mac\\source\\repos\\blazorrecursivaproyectapp\\blazorrecursivaproyectapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{873EBB3B-49AE-43CD-B842-F4F4585E2C3C}|BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp.csproj|solutionrelative:blazorrecursivaproyectapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{873EBB3B-49AE-43CD-B842-F4F4585E2C3C}|BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp.csproj|c:\\users\\mac\\source\\repos\\blazorrecursivaproyectapp\\blazorrecursivaproyectapp\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{873EBB3B-49AE-43CD-B842-F4F4585E2C3C}|BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp.csproj|solutionrelative:blazorrecursivaproyectapp\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{873EBB3B-49AE-43CD-B842-F4F4585E2C3C}|BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp.csproj|c:\\users\\mac\\source\\repos\\blazorrecursivaproyectapp\\blazorrecursivaproyectapp\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{873EBB3B-49AE-43CD-B842-F4F4585E2C3C}|BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp.csproj|solutionrelative:blazorrecursivaproyectapp\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{873EBB3B-49AE-43CD-B842-F4F4585E2C3C}|BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp.csproj|c:\\users\\mac\\source\\repos\\blazorrecursivaproyectapp\\blazorrecursivaproyectapp\\components\\pages\\genre.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{873EBB3B-49AE-43CD-B842-F4F4585E2C3C}|BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp.csproj|solutionrelative:blazorrecursivaproyectapp\\components\\pages\\genre.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{873EBB3B-49AE-43CD-B842-F4F4585E2C3C}|BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp.csproj|c:\\users\\mac\\source\\repos\\blazorrecursivaproyectapp\\blazorrecursivaproyectapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{873EBB3B-49AE-43CD-B842-F4F4585E2C3C}|BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp.csproj|solutionrelative:blazorrecursivaproyectapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{873EBB3B-49AE-43CD-B842-F4F4585E2C3C}|BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp.csproj|c:\\users\\mac\\source\\repos\\blazorrecursivaproyectapp\\blazorrecursivaproyectapp\\components\\pages\\inputdata.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{873EBB3B-49AE-43CD-B842-F4F4585E2C3C}|BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp.csproj|solutionrelative:blazorrecursivaproyectapp\\components\\pages\\inputdata.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{873EBB3B-49AE-43CD-B842-F4F4585E2C3C}|BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp.csproj|c:\\users\\mac\\source\\repos\\blazorrecursivaproyectapp\\blazorrecursivaproyectapp\\components\\pages\\showhoroscope.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{873EBB3B-49AE-43CD-B842-F4F4585E2C3C}|BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp.csproj|solutionrelative:blazorrecursivaproyectapp\\components\\pages\\showhoroscope.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{873EBB3B-49AE-43CD-B842-F4F4585E2C3C}|BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp.csproj|c:\\users\\mac\\source\\repos\\blazorrecursivaproyectapp\\blazorrecursivaproyectapp\\components\\pages\\statistics.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{873EBB3B-49AE-43CD-B842-F4F4585E2C3C}|BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp.csproj|solutionrelative:blazorrecursivaproyectapp\\components\\pages\\statistics.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\appsettings.json",
+              "RelativeDocumentMoniker": "BlazorRecursivaProyectApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\appsettings.json",
+              "RelativeToolTip": "BlazorRecursivaProyectApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-14T13:56:44.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "BlazorRecursivaProyectApp\\Components\\_Imports.razor",
+              "ToolTip": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\Components\\_Imports.razor",
+              "RelativeToolTip": "BlazorRecursivaProyectApp\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T13:26:40.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\Program.cs",
+              "RelativeDocumentMoniker": "BlazorRecursivaProyectApp\\Program.cs",
+              "ToolTip": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\Program.cs",
+              "RelativeToolTip": "BlazorRecursivaProyectApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T13:25:56.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "BlazorRecursivaProyectApp\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\AppDbContext.cs",
+              "RelativeToolTip": "BlazorRecursivaProyectApp\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T13:25:53.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Error.razor",
+              "DocumentMoniker": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\Components\\Pages\\Error.razor",
+              "RelativeDocumentMoniker": "BlazorRecursivaProyectApp\\Components\\Pages\\Error.razor",
+              "ToolTip": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\Components\\Pages\\Error.razor",
+              "RelativeToolTip": "BlazorRecursivaProyectApp\\Components\\Pages\\Error.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T13:25:46.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Statistics.razor",
+              "DocumentMoniker": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\Components\\Pages\\Statistics.razor",
+              "RelativeDocumentMoniker": "BlazorRecursivaProyectApp\\Components\\Pages\\Statistics.razor",
+              "ToolTip": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\Components\\Pages\\Statistics.razor",
+              "RelativeToolTip": "BlazorRecursivaProyectApp\\Components\\Pages\\Statistics.razor",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T13:15:43.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ShowHoroscope.razor",
+              "DocumentMoniker": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\Components\\Pages\\ShowHoroscope.razor",
+              "RelativeDocumentMoniker": "BlazorRecursivaProyectApp\\Components\\Pages\\ShowHoroscope.razor",
+              "ToolTip": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\Components\\Pages\\ShowHoroscope.razor",
+              "RelativeToolTip": "BlazorRecursivaProyectApp\\Components\\Pages\\ShowHoroscope.razor",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAACQAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T13:03:16.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InputData.razor",
+              "DocumentMoniker": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\Components\\Pages\\InputData.razor",
+              "RelativeDocumentMoniker": "BlazorRecursivaProyectApp\\Components\\Pages\\InputData.razor",
+              "ToolTip": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\Components\\Pages\\InputData.razor",
+              "RelativeToolTip": "BlazorRecursivaProyectApp\\Components\\Pages\\InputData.razor",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAKEAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T12:56:22.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Genre.razor",
+              "DocumentMoniker": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\Components\\Pages\\Genre.razor",
+              "RelativeDocumentMoniker": "BlazorRecursivaProyectApp\\Components\\Pages\\Genre.razor",
+              "ToolTip": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\Components\\Pages\\Genre.razor",
+              "RelativeToolTip": "BlazorRecursivaProyectApp\\Components\\Pages\\Genre.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T12:55:43.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "BlazorRecursivaProyectApp\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\Mac\\source\\repos\\BlazorRecursivaProyectApp\\BlazorRecursivaProyectApp\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "BlazorRecursivaProyectApp\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T12:54:52.785Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

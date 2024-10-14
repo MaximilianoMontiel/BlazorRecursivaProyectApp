@@ -1,0 +1,56 @@
+﻿@page "/genre"
+
+<HeaderLayout Title="Tu Género" OnBackClick="GoBack" />
+
+<div class="genero-container">
+    <div class="progress-bar">
+        <div class="circle filled"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <h3 class="form-title">INGRESA TU GÉNERO</h3>
+
+    <div class="gender-selection">
+        <img src="Images/gen-1.png" alt="Masculino" @onclick="() => selectGenre(masculino)" class="@GetGenderClass("masculino")" />
+        <img src="Images/gen-2.png" alt="Femenino" @onclick="() => selectGenre(femenino)" class="@GetGenderClass("femenino")" />
+        <img src="Images/gen-3.png" alt="Otro" @onclick="() => selectGenre(otro)" class="@GetGenderClass("otro")" />
+    </div>
+
+    <button class="btn-ingresar" @onclick="goToNext">CONTINUAR</button>
+</div>
+
+@code {
+    private string selectedGenre;
+    private string masculino = "masculino";
+    private string femenino = "femenino";
+    private string otro = "otro";
+
+    private void selectGenre(string genre)
+    {
+        selectedGenre = genre;
+    }
+
+    private string GetGenderClass(string genre)
+    {
+        return genre == selectedGenre ? "selected" : "";
+    }
+
+    private void goToNext()
+    {
+        if (!string.IsNullOrEmpty(selectedGenre))
+        {
+            // Navega a InputData
+            NavigationManager.NavigateTo("/input-data");
+        }
+    }
+
+    private void GoBack()
+    {
+        // Navega a Home
+        NavigationManager.NavigateTo("/"); 
+    }
+
+    [Inject]
+    NavigationManager NavigationManager { get; set; }
+}

@@ -1,0 +1,439 @@
+/* _content/BlazorRecursivaProyectApp/Components/Layout/HeaderLayout.razor.rz.scp.css */
+.header[b-sxovufulgp] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0E4FA4; /* Color de fondo */
+    padding: 10px;
+    color: white;
+}
+
+.btn-back[b-sxovufulgp] {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header-title[b-sxovufulgp] {
+    flex-grow: 1;
+    text-align: right;
+    font-size: 20px;
+    margin: 0;
+}
+
+i[b-sxovufulgp] {
+    font-size: 24px; /* Tamaño del ícono de la flecha */
+}
+/* _content/BlazorRecursivaProyectApp/Components/Layout/MainLayout.razor.rz.scp.css */
+#blazor-error-ui[b-2adt4pfgs6] {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss[b-2adt4pfgs6] {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+/* _content/BlazorRecursivaProyectApp/Components/Pages/Genre.razor.rz.scp.css */
+/* Contenedor principal de la página */
+.genero-container[b-1g734dmwh4] {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+   /* background-color: #f5f5f5;*/
+/*    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+}
+
+/* Barra de progreso */
+.progress-bar[b-1g734dmwh4] {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.circle[b-1g734dmwh4] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #0e50a1;
+    margin: 0 10px;
+}
+
+.filled[b-1g734dmwh4] {
+    background-color: #0e50a1;
+}
+
+/* Título */
+.form-title[b-1g734dmwh4] {
+    color: #6a88b7;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+/* Selección de género */
+.gender-selection[b-1g734dmwh4] {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+    .gender-selection img[b-1g734dmwh4] {
+        width: 80px;
+        height: auto;
+        margin: 0 30px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+
+        .gender-selection img:hover[b-1g734dmwh4] {
+            transform: scale(1.1);
+        }
+
+.selected[b-1g734dmwh4] {
+    border: 2px solid #fe6d1a;
+    border-radius: 50%;
+}
+
+/* Botón de ingresar */
+.btn-ingresar[b-1g734dmwh4] {
+    background-color: #fe6d1a;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+    .btn-ingresar:hover[b-1g734dmwh4] {
+        background-color: #d95f18;
+    }
+/* _content/BlazorRecursivaProyectApp/Components/Pages/Home.razor.rz.scp.css */
+.container[b-xnla0pmndi] {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50 px;
+}
+
+.landing-image[b-xnla0pmndi] {
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.btn-ingresar[b-xnla0pmndi] {
+    background-color: #fe6d1a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .btn-ingresar:hover[b-xnla0pmndi] {
+        background-color: #d95f18;
+    }
+
+h1[b-xnla0pmndi] {
+    text-align: center;
+}
+
+button[b-xnla0pmndi] {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-estadisticas[b-xnla0pmndi] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-consultar[b-xnla0pmndi] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+/* _content/BlazorRecursivaProyectApp/Components/Pages/InputData.razor.rz.scp.css */
+.input-container[b-kdd3dera9a] {
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Permite que el contenido se alinee en columna */
+    justify-content: flex-start; /* Asegura que el contenido esté centrado verticalmente */
+    min-height: 100vh; /* Hace que el contenedor ocupe al menos el 100% del alto de la ventana */
+}
+
+.progress-bar[b-kdd3dera9a] {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.circle[b-kdd3dera9a] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #0e50a1;
+    margin: 0 5px;
+}
+
+.filled[b-kdd3dera9a] {
+    background-color: #0e50a1;
+}
+
+.form-title[b-kdd3dera9a] {
+    color: #6a88b7;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-group[b-kdd3dera9a] {
+    margin-bottom: 20px;
+}
+
+    .form-group label[b-kdd3dera9a] {
+        display: block;
+        font-size: 18px;
+        color: #6a88b7;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+
+    .form-group input[b-kdd3dera9a] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+.buttons-container[b-kdd3dera9a] {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 20px; /* Añade un espacio entre los botones */
+    flex-wrap: wrap; /* Permite que los botones se reorganicen si el espacio es pequeño */
+}
+
+.btn-back[b-kdd3dera9a], .btn-continue[b-kdd3dera9a] {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-back[b-kdd3dera9a] {
+    background-color: #0e50a1;
+    color: white;
+}
+
+    .btn-back:hover[b-kdd3dera9a] {
+        background-color: #084289;
+    }
+
+.btn-continue[b-kdd3dera9a] {
+    background-color: #fe6d1a;
+    color: white;
+}
+
+    .btn-continue[disabled][b-kdd3dera9a] {
+        background-color: #cccccc; /* Color gris cuando está deshabilitado */
+        cursor: not-allowed;
+        opacity: 0.5; /* Reduce la opacidad para mayor claridad */
+    }
+
+    .btn-continue:hover[b-kdd3dera9a] {
+        background-color: #d95f18;
+    }
+
+.loader[b-kdd3dera9a] {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #0e50a1;
+}
+
+/* Asegúrate de aplicar este estilo al input de fecha */
+input[type="date"][b-kdd3dera9a] {
+    position: relative;
+    left: auto; /* Reemplaza cualquier valor de left si se aplica */
+    right: 0; /* Hace que el calendario aparezca alineado a la derecha */
+    z-index: 10; /* Asegura que esté por encima de otros elementos */
+    width: 100%; /* Ajusta el ancho del input de fecha */
+}
+
+.date-input[b-kdd3dera9a] {
+    position: relative;
+    right: 100; /* Alinea el input hacia la derecha */
+    z-index: 10;
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.loader-container[b-kdd3dera9a] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo gris semitransparente */
+    display: flex;
+    flex-direction: column; /* Alinea el loader y el texto verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    z-index: 1000; /* Asegura que esté por encima de todo */
+}
+
+.loader[b-kdd3dera9a] {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #0e50a1; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin-b-kdd3dera9a 2s linear infinite;
+}
+
+@keyframes spin-b-kdd3dera9a {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader-text[b-kdd3dera9a] {
+    margin-top: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* _content/BlazorRecursivaProyectApp/Components/Pages/ShowHoroscope.razor.rz.scp.css */
+.horoscope-container[b-jt0m40ph7x] {
+    text-align: center;
+    padding: 20px;
+}
+
+/*.sign-icon {
+    width: 100px;
+    height: 100px;
+}*/
+
+.sign-icon[b-jt0m40ph7x] {
+    max-width: 100%; /* La imagen no será más grande que el ancho del contenedor */
+    height: auto; /* Mantiene la proporción correcta de la imagen */
+    display: inline-block; /* Esto asegura que la imagen sea un bloque separado */
+    margin: auto; /* Centra la imagen horizontalmente */
+}
+
+
+.greeting[b-jt0m40ph7x] {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.horoscope-text[b-jt0m40ph7x] {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.btn-continue[b-jt0m40ph7x] {
+    background-color: #FF7F00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .btn-continue:hover[b-jt0m40ph7x] {
+        background-color: #E56C00;
+    }
+/* _content/BlazorRecursivaProyectApp/Components/Pages/Statistics.razor.rz.scp.css */
+.statistics-container[b-lvbyo47vwb] {
+    padding: 20px;
+    text-align: center;
+}
+
+.most-searched-sign[b-lvbyo47vwb] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*.sign-image {
+    width: 100px;
+    height: 100px;
+}*/
+
+.history-container[b-lvbyo47vwb] {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.history-entry[b-lvbyo47vwb] {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.statistics-container[b-lvbyo47vwb] {
+    padding: 20px;
+    text-align: center;
+}
+
+.most-searched-sign[b-lvbyo47vwb] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sign-image[b-lvbyo47vwb] {
+    width: 100px;
+    height: 100px;
+}
+
+.history-container[b-lvbyo47vwb] {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.history-entry[b-lvbyo47vwb] {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.history-table th[b-lvbyo47vwb], .history-table td[b-lvbyo47vwb] {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center; /* Alinea el contenido de las celdas al centro */
+}

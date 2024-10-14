@@ -1,0 +1,45 @@
+﻿@page "/"
+@using BlazorRecursivaProyectApp.Models
+@inject AppDbContext DbContext
+@using Microsoft.EntityFrameworkCore
+
+
+<PageTitle>Inicio</PageTitle>
+
+<div class="container">
+    <div class="image-container">
+        <img src="Images/dama.png" alt="Imagen de dama" class="landing-image" />
+    </div>
+    <button class="btn-ingresar" @onclick="goToGenre">INGRESAR</button>
+
+    @if (hasConsultations)
+    {
+        <button class="btn-estadisticas" @onclick="GoToStatistics">ESTADISTICAS</button>
+    }
+</div>
+
+@code {
+    [Inject]
+    NavigationManager NavigationManager { get; set; }
+
+    private bool hasConsultations = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Verifica si hay al menos una consulta en la base de datos
+        hasConsultations = await DbContext.HistorialConsultas.AnyAsync();
+    }
+
+    private void goToGenre()
+    {
+        // Navega a la página de Género
+        NavigationManager.NavigateTo("/genre");
+    }
+
+    private void GoToStatistics()
+    {
+        // Navega a la página de Estadisticas
+        NavigationManager.NavigateTo("/statistics");
+    }
+
+}
